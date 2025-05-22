@@ -115,6 +115,12 @@ app.use('/', clientAddressRoutes);
 app.use('/chatprofile', chatProfileRoutes);
 app.use('/change-password', changePassword);
 
+
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the Ecommerce Backend!');
+});
+
 // 404 Handler
 app.use((req, res) => {
   console.log(`404: Route not found - ${req.method} ${req.url}`);

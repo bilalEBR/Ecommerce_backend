@@ -97,7 +97,7 @@ io.on('connection', (socket) => {
 app.use('/', userRoutes);
 app.use('/products', productRoutes);
 app.use('/categories', categoryRoutes);
-app.use('/orders', orderRoutes);
+// app.use('/orders', orderRoutes);
 app.use('/admin/users', adminUsersRoutes);
 app.use('/admin/sellers', adminSellerRoutes);
 app.use('/admin/categories', adminCategoryRoutes);

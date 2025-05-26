@@ -43,8 +43,8 @@ router.get('/client/address/:userId', authenticateToken, async (req, res) => {
     }
 
     res.status(200).json({
-      fullName: address.fullName || '',
-      email: address.email || ''
+      // fullName: address.fullName || '',
+      // email: address.email || ''
       // phoneNumber: address.phoneNumber || '',
       // region: address.region || '',
       // postalCode: address.postalCode || '',

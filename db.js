@@ -1,9 +1,9 @@
 require('dotenv').config();
 
 const { MongoClient } = require('mongodb');
-// const uri = 'mongodb://localhost:27017';
+ // const uri = 'mongodb://localhost:27017';
 
-const uri = process.env.MONGODB_URI;
+ const uri = process.env.MONGODB_URI;
 
 const dbName = 'myDatabase';
 

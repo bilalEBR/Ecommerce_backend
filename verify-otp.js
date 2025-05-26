@@ -102,7 +102,8 @@ router.post('/verify-otp', async (req, res) => {
     }
 
     // Generate new password (12 chars, alphanumeric)
-    const newPassword = Math.random().toString(36).slice(2, 14);
+    const newPassword = Math.floor(100000 + Math.random() * 900000).toString();
+ 
 
     // Check which collection contains the email and update accordingly
     let updateResult;

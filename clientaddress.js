@@ -43,15 +43,15 @@ router.get('/client/address/:userId', authenticateToken, async (req, res) => {
     }
 
     res.status(200).json({
-      // fullName: address.fullName || '',
-      // email: address.email || ''
-      // phoneNumber: address.phoneNumber || '',
-      // region: address.region || '',
-      // postalCode: address.postalCode || '',
-      // city: address.city || '',
-      // latitude: address.latitude || null,
-      // longitude: address.longitude || null,
-      // addressString: address.addressString || ''
+      fullName: address.fullName || '',
+      email: address.email || '',
+      phoneNumber: address.phoneNumber || '',
+      region: address.region || '',
+      postalCode: address.postalCode || '',
+      city: address.city || '',
+      latitude: address.latitude || null,
+      longitude: address.longitude || null,
+      addressString: address.addressString || ''
     });
   } catch (error) {
     console.error('Error fetching client address:', error);
